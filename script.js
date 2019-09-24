@@ -125,3 +125,24 @@ var familyTree = [
 ];
 
 console.log(familyTree);
+
+var robotList = [];
+function createRobot (name, offspring) {
+    var robot = {}; 
+    robot.name = name;
+    robot.offspring = offspring;
+    robotList.push(robot);
+}
+
+createRobot('Kato', [
+    {
+    name: 'Kato jr.',
+    age: 4,
+    coder: true,
+    location: 'The Moon'
+    }
+
+]);
+
+console.log(robotList);
+
